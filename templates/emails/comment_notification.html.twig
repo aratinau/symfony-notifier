@@ -1,0 +1,13 @@
+{% extends 'emails/body.html.twig' %}
+
+{% block content %}
+    <p>
+        {{ comment }}
+    </p>
+{% endblock %}
+
+{% block action %}
+    <spacer size="16"></spacer>
+{#    <button href="{{ url('review_comment', { id: comment.id }) }}">Accept</button>#}
+{#    <button href="{{ url('review_comment', { id: comment.id, reject: true }) }}">Reject</button>#}
+{% endblock %}
